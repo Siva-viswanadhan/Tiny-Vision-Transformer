@@ -47,3 +47,10 @@ class CNN(nn.Module):
         x=self.l2(x)
         x=self.relu(x)
         x=self.ol(x)
+        
+        return x
+    
+model=CNN()
+criterion=nn.CrossEntropyLoss()
+optimizer=torch.optim.Adam(model.parameters(),lr=0.001)
+
