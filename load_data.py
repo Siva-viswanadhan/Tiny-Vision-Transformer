@@ -40,7 +40,12 @@ train_labels_path=r"C:\Users\siva-INC-5712\Desktop\Tiny Vision Transformer\Mnist
 test_images_path=r"C:\Users\siva-INC-5712\Desktop\Tiny Vision Transformer\Mnist\t10k-images.idx3-ubyte"
 test_labels_path=r"C:\Users\siva-INC-5712\Desktop\Tiny Vision Transformer\Mnist\t10k-labels.idx1-ubyte"
 
-
+class MnistdataLoader:
+    def __init__(self,train_images_path,train_labels_path,test_images_path,test_labels_path):
+        self.train_images_path=train_images_path
+        self.train_labels_path=train_labels_path
+        self.test_images_path=test_images_path
+        self.test_labels_path=test_labels_path
 
 
 x_train = idx2numpy.convert_from_file(train_images_path)
