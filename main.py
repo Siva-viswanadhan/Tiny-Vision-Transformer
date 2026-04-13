@@ -54,3 +54,21 @@ model=CNN()
 criterion=nn.CrossEntropyLoss()
 optimizer=torch.optim.Adam(model.parameters(),lr=0.001)
 
+
+epochs = 5
+train_loss=0.0
+
+model.train()
+
+for epoch in range (epochs):
+    for x_batch, y_batch in train_loader:
+
+        optimizer.zero_grad()
+        outputs=model(x_batch)
+        loss=criterion(y_batch,outputs)
+        loss.backward()
+        optimizer.step()
+
+        train_loss += loss.item()
+
+    train_loss /= len(train_loader)
