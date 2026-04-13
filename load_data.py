@@ -6,27 +6,27 @@ import torchvision.transforms as T
 import torch
 
 class MnistDataset(Dataset):
-    def __init__(self,image,label):
-        self.image= image
-        self.label=label
+    def __init__(self,images,labels):
+        self.images= images
+        self.labels=labels
 
         
 
-        return image,label
+        
 
-    def __len__(self,label):
+    def __len__(self):
         return len(self.label)
     
     def __getitem__(self, index):
 
-        image=self.image[index]
-        label=self.label[index]
+        image=self.images[index]
+        label=self.labels[index]
 
         image= torch.tensor(image,dtype=torch.float32)
         image=image/255.0
         image=image.unsqueeze(0)  #---> add channel dimension
 
-        label=torch.tensor(label,dtype=torch.float32)
+        label=torch.tensor(label,dtype=torch.long)
 
 
         return image,label
