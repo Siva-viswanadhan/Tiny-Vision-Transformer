@@ -2,7 +2,7 @@ import numpy
 import pandas 
 import torch
 import os
-from load_data import MnistDataset
+from load_data1 import MnistDataset
 from torch.utils.data import DataLoader
 
 train_dataset=MnistDataset(r'C:\Users\siva-INC-5712\Desktop\Tiny Vision Transformer\Mnist\train-images.idx3-ubyte',
