@@ -50,5 +50,6 @@ class MnistDataset(Dataset):
 
         image=self.images[index]
         label=self.labels[index]
-        image=image.unsqueeze(0)  #---> add channel dimension
+        # print(image.shape)
+        # image=image.unsqueeze(0)  #---> add channel dimension
         return image,label

@@ -55,7 +55,7 @@ criterion=nn.CrossEntropyLoss()
 optimizer=torch.optim.Adam(model.parameters(),lr=0.001)
 
 
-epochs = 5
+epochs = 10
 
 
 
