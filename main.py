@@ -96,7 +96,7 @@ for epoch in range (epochs):
             correct+=(preds==y_batch).sum().item()
             total+=y_batch.size(0)
 
-    test_loss /= len(test_loader)
-    test_acc =correct/total
+test_loss /= len(test_loader)
+test_acc =correct/total
 
-    print(f'test loss:{test_loss:.4f} | test accuracy : {test_acc:.2f}')
+print(f'test loss:{test_loss:.4f} | test accuracy : {test_acc:.2f}')
