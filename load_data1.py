@@ -7,11 +7,11 @@ import torch
 import idx2numpy
 
 
-train_images_path=r"C:\Users\siva-INC-5712\Desktop\Tiny Vision Transformer\Mnist\train-images.idx3-ubyte"
-train_labels_path=r"C:\Users\siva-INC-5712\Desktop\Tiny Vision Transformer\Mnist\train-labels.idx1-ubyte"
+train_images_path="/home/siva-inc5712/Desktop/Tiny-Vision-Transformer/archive/train-images.idx3-ubyte"
+train_labels_path="/home/siva-inc5712/Desktop/Tiny-Vision-Transformer/archive/train-labels.idx1-ubyte"
 
-test_images_path=r"C:\Users\siva-INC-5712\Desktop\Tiny Vision Transformer\Mnist\t10k-images.idx3-ubyte"
-test_labels_path=r"C:\Users\siva-INC-5712\Desktop\Tiny Vision Transformer\Mnist\t10k-labels.idx1-ubyte"
+test_images_path="/home/siva-inc5712/Desktop/Tiny-Vision-Transformer/archive/t10k-images.idx3-ubyte"
+test_labels_path="/home/siva-inc5712/Desktop/Tiny-Vision-Transformer/archive/t10k-labels.idx1-ubyte"
 
 
 
