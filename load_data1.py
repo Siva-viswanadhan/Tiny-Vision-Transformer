@@ -44,7 +44,7 @@ class MnistDataset(Dataset):
         self.labels=labels
 
     def __len__(self):
-        return len(self.label)
+        return len(self.labels)
     
     def __getitem__(self, index):
 
